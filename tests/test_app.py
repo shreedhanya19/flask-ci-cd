@@ -15,7 +15,7 @@ class FlaskTestCase(unittest.TestCase):
         response = self.client.get("/")
         self.assertEqual(
             response.get_data(as_text=True),
-            "Hello from Flask CI/CD pipeline!"
+            "Wrong Response"
         )
 
 if __name__ == "__main__":
